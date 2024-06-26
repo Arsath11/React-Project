@@ -13,16 +13,20 @@ const Header = () => {
                 modalOpen ? (
                     <div className='p-2 block md:block lg:hidden'>
                         <div className=' mx-6  shadow-lg  border rounded-xl opacity-1' >
-                            <div className='flex justify-end pr-3 pt-3'>
+                            <div className='flex justify-end pr-3 pt-2'>
                                 <IoClose size={25} onClick={() => setModalOpen(false)} />
                             </div>
-                            <div className='flex items-center  p-5 gap-2 font-bold flex-col '>
+                            <div className='flex items-center  p-3 gap-1 font-bold flex-col '>
 
                                 <p className='cursor-pointer hover:underline hover:text-[#6415ff] font-bold hover:decoration-2  hover:decoration-[#6415ff]'>About</p>
                                 <p className='cursor-pointer hover:underline hover:decoration-2 font-bold hover:text-[#6415ff]  hover:decoration-[#6415ff]'>Blog</p>
                                 <p className='cursor-pointer hover:underline hover:decoration-2 font-bold hover:text-[#6415ff]  hover:decoration-[#6415ff]'>Pricing</p>
                                 <p className='cursor-pointer hover:underline hover:decoration-2 font-bold hover:text-[#6415ff]  hover:decoration-[#6415ff]'>Contact Us</p>
-                                <p className='cursor-pointer hover:underline hover:decoration-2 font-bold  hover:text-[#6415ff] hover:decoration-[#6415ff]'>Login</p>
+                                <span className='flex  flex-col-reverse gap-2'>
+
+<button className='bg-[#6415ff] px-3 py-2 rounded text-white font-bold'>Login</button>
+<button className='bg-[#6415ff] px-3 py-2 rounded text-white font-bold'>Sign Up</button>
+</span>
 
 
                             </div>
